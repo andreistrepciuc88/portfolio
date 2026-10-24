@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="22%" r="95%">
+      <stop offset="0" stop-color="#28396b"/>
+      <stop offset="0.55" stop-color="#121b30"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </radialGradient>
+    <linearGradient id="letter" x1="14" y1="12" x2="51" y2="49" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#a9bdff"/>
+      <stop offset="1" stop-color="#5ee7e2"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8ca9ff" stop-opacity="0.75"/>
+      <stop offset="0.5" stop-color="#8ca9ff" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#5ee7e2" stop-opacity="0.75"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- Sfondo e bordo sfumato -->
+  <rect x="1" y="1" width="62" height="62" rx="15" fill="url(#bg)"/>
+  <rect x="1" y="1" width="62" height="62" rx="15" fill="none" stroke="url(#edge)" stroke-width="1.6"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="12.5" fill="none" stroke="#ffffff" stroke-opacity="0.06"/>
+
+  <!-- Bagliore dietro la lettera -->
+  <circle cx="27" cy="31" r="19" fill="#6f8cff" fill-opacity="0.3" filter="url(#blur)"/>
+
+  <!-- Orbita decorativa -->
+  <ellipse cx="32" cy="32" rx="27" ry="13" transform="rotate(-24 32 32)" fill="none" stroke="#5ee7e2" stroke-opacity="0.5" stroke-width="1.2"/>
+  <ellipse cx="32" cy="32" rx="22" ry="22" fill="none" stroke="#8ca9ff" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="2 3"/>
+
+  <!-- Lettera A -->
+  <g transform="translate(-5 0)">
+    <path d="M14 49 29 12h7l15 37H41l-3-9H27l-3 9z" fill="url(#letter)"/>
+    <path d="M29 31h6l-3-9z" fill="#5ee7e2"/>
+  </g>
+
+  <!-- Scintilla in alto a destra -->
+  <path d="M51 8 52.6 11.4 56 13 52.6 14.6 51 18 49.4 14.6 46 13 49.4 11.4z" fill="#5ee7e2"/>
+  <circle cx="11" cy="52" r="1.4" fill="#8ca9ff" fill-opacity="0.7"/>
+
+  <!-- Puntino -->
+  <circle cx="53" cy="53" r="7" fill="#5ee7e2" fill-opacity="0.22"/>
+  <circle cx="53" cy="53" r="4.2" fill="#5ee7e2"/>
+</svg>

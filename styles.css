@@ -2768,6 +2768,38 @@ button {
     height: 28px;
   }
 }
+/* ==========================================================================
+   ICONE SOCIAL INTEGRATE NEL MENU NAVIGAZIONE
+   ========================================================================== */
+
+/* Forza l'allineamento verticale centrato dell'elemento della lista */
+.menu-social-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px; /* Spazio orizzontale per distanziarle dagli altri link */
+}
+
+/* Stile base delle icone e transizione fluida */
+.menu-social-item .social-icon {
+  color: #ffffff; /* Sostituisci con il colore dei tuoi link attuali se non sono bianchi */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Dimensione ottimale per stare in linea con il testo del menu */
+.menu-social-item .social-icon svg {
+  width: 18px;  /* Cambia a 20px se le preferisci leggermente più grandi */
+  height: 18px;
+}
+
+/* Effetto al passaggio del mouse (Hover) coerente col tema del sito */
+.menu-social-item .social-icon:hover {
+  color: #00f0ff; /* Il colore neon che usi per gli altri effetti hover del menu */
+  transform: translateY(-1px); /* Micro-sollevamento elegante */
+}
 
 
 
